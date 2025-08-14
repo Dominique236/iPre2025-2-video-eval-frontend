@@ -1,0 +1,351 @@
+/* CreateRubric.css */
+.page-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #f8fafc;
+  overflow-x: hidden;
+  font-family: Inter, "Noto Sans", sans-serif;
+}
+
+.layout-container {
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.main-content {
+  padding: 20px 160px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  flex: 1;
+}
+
+.page-title-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 0px;
+}
+
+.page-title {
+  color: #0d151c;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  min-width: 288px;
+}
+
+/* Contenedor específico para asegurar mismo ancho */
+.form-field,
+.upload-container {
+  width: 100%;
+  max-width: none;
+}
+
+.form-field {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 12px 0px;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Forzar mismo ancho para inputs y upload area */
+.text-input,
+.upload-area {
+  width: calc(100% - 0px) !important;
+  box-sizing: border-box !important;
+}
+
+.field-label {
+  color: #0d151c;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding-bottom: 8px;
+}
+
+.text-input {
+  /* El ancho se define arriba con .text-input, .upload-area */
+  min-width: 0 !important;
+  max-width: none !important;
+  resize: none;
+  overflow: hidden;
+  border-radius: 12px !important;
+  color: #0d151c;
+  border: 1px solid #cedce8 !important;
+  background-color: #f8fafc !important;
+  height: 56px !important;
+  padding: 15px !important;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0 !important;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: #cedce8;
+  box-shadow: none;
+}
+
+.text-input::placeholder {
+  color: #49749c;
+}
+
+.section-title {
+  color: #0d151c;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  padding: 20px 0px 12px 0px;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.upload-area {
+  /* El ancho se define arriba con .text-input, .upload-area */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  border-radius: 12px;
+  border: 2px dashed #cedce8;
+  padding: 56px 24px;
+}
+
+.upload-content {
+  display: flex;
+  max-width: 480px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.upload-title {
+  color: #0d151c;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  max-width: 480px;
+  text-align: center;
+}
+
+.upload-subtitle {
+  color: #0d151c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 480px;
+  text-align: center;
+}
+
+.browse-button {
+  display: flex;
+  min-width: 84px;
+  max-width: 480px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50px;
+  height: 40px;
+  padding: 0 16px;
+  background-color: #e7edf4;
+  color: #0d151c;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.015em;
+  border: none;
+}
+
+.browse-button:hover {
+  background-color: #cedce8;
+}
+
+.button-container {
+  display: flex;
+  padding: 12px 0px;
+  justify-content: flex-end;
+}
+
+/* Contenedor específico para el botón Add Aspect dentro de la sección de criterios */
+.criteria-button-container {
+  display: flex;
+  padding: 16px 0 8px 0;
+  justify-content: flex-start;
+}
+
+/* Sección para mostrar los aspectos agregados */
+.added-aspects {
+  margin: 16px 0;
+  padding: 16px 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Estilos para la lista de aspectos agregados */
+.added-aspects-list {
+  margin: 16px 0;
+  padding: 0;
+}
+
+.aspect-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.aspect-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.aspect-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0d151c;
+}
+
+.aspect-details {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.aspect-detail {
+  font-size: 14px;
+  color: #49749c;
+  padding: 4px 8px;
+  background-color: #f1f5f9;
+  border-radius: 4px;
+}
+
+.remove-aspect-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.remove-aspect-button:hover {
+  background-color: #dc2626;
+}
+
+/* Sección para el botón Save Rubric al final de la vista */
+.save-section {
+  display: flex;
+  padding: 16px 160px 24px 160px;
+  justify-content: center;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 16px;
+  width: 100%;
+  background-color: #f8fafc;
+}
+
+.save-section .save-button {
+  min-width: 200px;
+  max-width: 400px;
+  width: 300px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Mantener el estilo del botón Add igual que Browse Files */
+.add-button {
+  display: flex;
+  min-width: 84px;
+  max-width: 480px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50px;
+  height: 40px;
+  padding: 0 16px;
+  background-color: #e7edf4;
+  color: #0d151c;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.015em;
+  border: none;
+}
+
+.add-button:hover {
+  background-color: #cedce8;
+}
+
+.save-button {
+  display: flex;
+  min-width: 84px;
+  max-width: 480px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50px;
+  height: 40px;
+  padding: 0 16px;
+  background-color: #0b80ee;
+  color: #f8fafc;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.015em;
+  border: none;
+}
+
+.save-button:hover {
+  background-color: #0066cc;
+}
+
+.button-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

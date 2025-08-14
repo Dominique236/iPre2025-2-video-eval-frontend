@@ -1,0 +1,36 @@
+/* Reset de estilos para compatibilidad con Stitch/Tailwind */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Noto Sans", sans-serif;
+  background-color: #f8fafc; /* slate-50 */
+  color: #0d141c;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Remover estilos por defecto */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}

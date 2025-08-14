@@ -1,0 +1,94 @@
+/* Navbar.css */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  border-bottom: 1px solid #e7edf4;
+  padding: 12px 40px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #0d141c;
+}
+
+.logo-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.logo-text {
+  color: #0d141c;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+.header-nav-container {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav-link {
+  color: #0d141c;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #0c7ff2;
+}
+
+.help-button {
+  display: flex;
+  max-width: 480px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 40px;
+  background-color: #e7edf4;
+  color: #0d141c;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.015em;
+  min-width: 0;
+  padding: 0 10px;
+  border: none;
+}
+
+.help-button:hover {
+  background-color: #cedbe8;
+}
+
+.help-icon {
+  color: #0d141c;
+}
+
+.user-avatar {
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1;
+  background-size: cover;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCo1wegmHIcgAZe2zEshO8cWbiq-N3CIye-TMyXtebbD3QH_vdsGvbh8M7lQdqohPw5nhySGIFi_gEVe1d4lXuqNldp6mFQZgwxTXEAAjK1t6YMywzSXz9T7kZ9XAz6f311kGI9cROYN3xosbW40BmqXCWqM2i2wYAg8qQTbRYgseRRWP3rYPZqEBf3d-ENUu_cANRFIMviFMvHcmGnLL0a1Yy7YqUgZhrSkarkc8UDYg3i15jLaYC-Q6-OSsI2RPqIrS5jauLQ1Zs");
+}
