@@ -1,0 +1,307 @@
+/* Flex bar chart for distribution */
+.dashboard-distribution-bar-group-flex {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-end;
+  justify-content: center;
+  height: 180px;
+  min-height: 120px;
+  padding: 0 1rem;
+}
+.dashboard-distribution-bar-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 2.5rem;
+  height: 100%;
+}
+/* Dashboard styles based on provided HTML and Tailwind classes */
+.dashboard-root {
+  min-height: 100vh;
+  background: #fafafa;
+  font-family: Inter, "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-layout-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ededed;
+  padding: 0.75rem 2.5rem;
+  background: #fff;
+}
+.dashboard-header-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.dashboard-logo {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #141414;
+}
+.dashboard-title {
+  color: #141414;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.dashboard-header-center {
+  display: flex;
+  gap: 2.25rem;
+}
+.dashboard-nav-link {
+  color: #141414;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.dashboard-header-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 2rem;
+  align-items: center;
+}
+.dashboard-search-label {
+  min-width: 10rem;
+  max-width: 16rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-search-box {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  background: #ededed;
+}
+.dashboard-search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  color: #888;
+  background: #ededed;
+  border-radius: 0.75rem 0 0 0.75rem;
+}
+.dashboard-search-input {
+  flex: 1;
+  border: none;
+  background: #ededed;
+  color: #141414;
+  font-size: 1rem;
+  padding: 0 1rem;
+  border-radius: 0 0.75rem 0.75rem 0;
+  outline: none;
+}
+.dashboard-search-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.dashboard-bell-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #ededed;
+  color: #141414;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.dashboard-bell-icon {
+  color: #141414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-avatar {
+  background-size: cover;
+  background-position: center;
+  border-radius: 9999px;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.dashboard-content-wrapper {
+  padding: 2rem 10rem;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.dashboard-content-container {
+  max-width: 960px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-summary-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+.dashboard-summary-title-group {
+  min-width: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.dashboard-summary-title {
+  color: #141414;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.dashboard-summary-desc {
+  color: #888;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.dashboard-summary-cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+.dashboard-summary-card {
+  min-width: 158px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid #dbdbdb;
+  background: #fff;
+}
+.dashboard-summary-card-title {
+  color: #141414;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.dashboard-summary-card-value {
+  color: #141414;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.dashboard-section-title {
+  color: #141414;
+  font-size: 1.375rem;
+  font-weight: 700;
+  padding: 1rem 0 0.5rem 1rem;
+}
+.dashboard-distribution-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+}
+.dashboard-distribution-card {
+  min-width: 18rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid #dbdbdb;
+  background: #fff;
+  padding: 1.5rem;
+}
+.dashboard-distribution-card-title {
+  color: #141414;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.dashboard-distribution-bar-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+  grid-template-rows: 1fr auto;
+  gap: 1.5rem 1rem;
+  align-items: end;
+  justify-items: center;
+  min-height: 180px;
+  padding: 0 1rem;
+}
+
+.dashboard-distribution-bar {
+  width: 24px;
+  min-height: 8px;
+  background: linear-gradient(180deg, #0b80ee 80%, #0b80ee 100%);
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 6px;
+  transition: height 0.3s;
+  display: block;
+}
+.dashboard-distribution-labels {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.dashboard-distribution-label {
+  color: #888;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+.dashboard-recent-evals-wrapper {
+  padding: 1rem 0;
+}
+.dashboard-recent-evals-table-container {
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 1px solid #dbdbdb;
+  background: #fff;
+}
+.dashboard-recent-evals-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.dashboard-recent-evals-table th,
+.dashboard-recent-evals-table td {
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #dbdbdb;
+}
+.dashboard-recent-evals-table tr:last-child td {
+  border-bottom: none;
+}
+.dashboard-table-col-title {
+  width: 300px;
+}
+.dashboard-table-col-evaluator {
+  width: 200px;
+}
+.dashboard-table-col-score {
+  width: 150px;
+}
+.dashboard-table-col-date {
+  width: 150px;
+}
+.dashboard-score-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  height: 2rem;
+  background: #e7edf4;
+  color: #141414;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  min-width: 100px;
+  padding: 0 1rem;
+}

@@ -1,0 +1,235 @@
+/* Root and layout */
+.uploadvideo-root {
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: Inter, "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.uploadvideo-layout-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.uploadvideo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7edf4;
+  padding: 0.75rem 2.5rem;
+  background: #fff;
+}
+.uploadvideo-header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #0d141c;
+}
+.uploadvideo-logo {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #0d141c;
+}
+.uploadvideo-title {
+  color: #0d141c;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.uploadvideo-header-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 2rem;
+  align-items: center;
+}
+.uploadvideo-nav {
+  display: flex;
+  gap: 2.25rem;
+}
+.uploadvideo-nav-link {
+  color: #0d141c;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.uploadvideo-avatar {
+  background-size: cover;
+  background-position: center;
+  border-radius: 9999px;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.uploadvideo-content-wrapper {
+  padding: 2rem 10rem;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.uploadvideo-content-container {
+  max-width: 960px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.uploadvideo-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+.uploadvideo-title-main {
+  color: #0d141c;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.uploadvideo-upload-area {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.uploadvideo-upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  border: 2px dashed #cedbe8;
+  border-radius: 0.75rem;
+  padding: 3.5rem 1.5rem;
+  background: #fff;
+}
+.uploadvideo-upload-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 480px;
+}
+.uploadvideo-upload-title {
+  color: #0d141c;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+}
+.uploadvideo-upload-desc {
+  color: #0d141c;
+  font-size: 0.875rem;
+  text-align: center;
+}
+.uploadvideo-select-btn {
+  min-width: 84px;
+  max-width: 480px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  height: 2.5rem;
+  padding: 0 1rem;
+  background: #e7edf4;
+  color: #0d141c;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: none;
+  transition: background 0.2s;
+}
+.uploadvideo-select-btn:hover {
+  background: #cedbe8;
+}
+.uploadvideo-file-row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  box-sizing: border-box;
+}
+.uploadvideo-file-label {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  flex: 1;
+}
+.uploadvideo-file-label-title {
+  color: #0d141c;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+}
+.uploadvideo-file-input {
+  flex: 1;
+  border: 1px solid #cedbe8;
+  background: #f8fafc;
+  color: #0d141c;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  outline: none;
+}
+.uploadvideo-file-input:focus {
+  border-color: #cedbe8;
+}
+.uploadvideo-progress-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+.uploadvideo-progress-info {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.uploadvideo-progress-label {
+  color: #0d141c;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.uploadvideo-progress-percent {
+  color: #0d141c;
+  font-size: 0.95rem;
+}
+.uploadvideo-progress-bar-bg {
+  width: 100%;
+  background: #cedbe8;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+  overflow: hidden;
+}
+.uploadvideo-progress-bar {
+  height: 100%;
+  background: #0c7ff2;
+  border-radius: 0.5rem;
+  transition: width 0.3s;
+}
+.uploadvideo-actions-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.uploadvideo-upload-btn {
+  display: flex;
+  min-width: 220px;
+  max-width: 600px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50px;
+  height: 40px;
+  padding: 0 16px;
+  background-color: #0b80ee;
+  color: #f8fafc;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.015em;
+  border: none;
+  transition: background 0.2s;
+}
+.uploadvideo-upload-btn:hover {
+  background-color: #0066cc;
+}

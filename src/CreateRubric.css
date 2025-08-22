@@ -85,7 +85,6 @@
 }
 
 .text-input {
-  /* El ancho se define arriba con .text-input, .upload-area */
   min-width: 0 !important;
   max-width: none !important;
   resize: none;
