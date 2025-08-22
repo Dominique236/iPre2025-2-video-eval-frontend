@@ -1,7 +1,10 @@
-import React from "react";
 import "./Navbar.css";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const showWorkspaceOptions = ["/workspace", "/dashboard", "/upload-video", "/create-rubric", "/videos", "/detailed-search", "/evaluate-video"].includes(location.pathname);
   return (
     <header className="header">
       <div className="header-logo">
@@ -28,10 +31,15 @@ export default function Navbar() {
       </div>
       <div className="header-nav-container">
         <div className="nav-links">
-          <a className="nav-link" href="#">Dashboard</a>
-          <a className="nav-link" href="#">Workspaces</a>
-          <a className="nav-link" href="#">Evaluations</a>
-          <a className="nav-link" href="#">Reports</a>
+          <button className="nav-link" onClick={() => navigate('/my-workspaces')}>Workspaces</button>
+          {showWorkspaceOptions && (
+            <>
+              <button className="nav-link" onClick={() => navigate('/create-rubric')}>Rubric</button>
+              <button className="nav-link" onClick={() => navigate('/videos')}>Videos</button>
+              <button className="nav-link" onClick={() => navigate('/upload-video')}>Upload Video</button>
+              <button className="nav-link" onClick={() => navigate('/dashboard')}>Dashboard</button>
+            </>
+          )}
         </div>
         <div className="user-avatar"></div>
       </div>
