@@ -1,0 +1,110 @@
+/* Root and layout */
+.myworkspaces-root {
+  min-height: 100vh;
+  background: #fafafa;
+  font-family: Inter, "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.myworkspaces-layout-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.myworkspaces-content-wrapper {
+  padding: 2rem 0;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.myworkspaces-content-container {
+  max-width: 960px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.myworkspaces-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+.myworkspaces-title {
+  color: #141414;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  min-width: 18rem;
+}
+.myworkspaces-new-btn {
+  min-width: 84px;
+  max-width: 480px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 9999px;
+  height: 2rem;
+  padding: 0 1rem;
+  background: #ededed;
+  color: #141414;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  transition: background 0.2s;
+}
+.myworkspaces-new-btn:hover {
+  background: #dbdbdb;
+}
+.myworkspaces-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.myworkspaces-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fafafa;
+  padding: 0.5rem 1rem;
+  min-height: 72px;
+  border-radius: 0.75rem;
+}
+.myworkspaces-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ededed;
+  color: #141414;
+  border-radius: 0.75rem;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+.myworkspaces-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.myworkspaces-name {
+  color: #141414;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.myworkspaces-desc {
+  color: #888;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
